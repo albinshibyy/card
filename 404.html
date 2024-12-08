@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="assets/icon.png" />
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="d9f45ba7-458e-4917-8b5c-28ed4a573a79"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/extra.css">
+    <title>404 error occured</title>
+</head>
+<body>
+ <script>
+        document.addEventListener("contextmenu", e => {
+            alert("right click is temporaly disabled");
+            e.preventDefault();
+        });
+    </script>
+    <div class="modal">
+        <img src="assets/img/tk.webp" alt="">
+        <div class="close"></div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+        <div class="header">
+        <a onclick="toggleTheme()" class="logo"><img src="assets/img/icons/dark.png" class="logo"></a>
+
+                <div class="main">
+                    <img src="assets/img/g.png" alt="" style="width:10rem">
+                    <h3 class="name">Page not found</h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title">you've reached an incorrect webpage</h3>
+                        <p class="text">--> the page you reached is incorrect<br>--> kindly contact the developer if there is any mistakes.</p>
+                    </div>
+                    <div class="icons-container">
+
+                    </div><br>
+                    <div class="buttons-wrap">
+                        <div class="follow-wrap">
+                            <a href="#popuphi" class="follow">Contact</a>
+                        </div>
+                        <div class="share-wrap">
+                            <a href="/" class="share">retutn home</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- POPUP POPUP POPUP/////////////////////////////////////////////////////////////////////////// -->
+
+ 
+     <!-- Lets talk popup page START-->
+    <div class="popup" id="popuphi">
+        <div class="popup__content">
+            <div class="popup__talk"> <a href="#!" class="popup__close">×</a>
+                <div class="popup__top">
+
+                   <!-- <figure class="hi__pic"> <a href="" class="hi__pic"> <img class="hi__pic" src="assets/img/tk.webp"
+                                alt=""> </a> </figure> -->
+                                <h3 class="name" style="font-family:'Acme', sans-serif">Contact options:</h3>
+                    <p class="popup__text">==> using element app(matrix id)'ll b a better option.</p>
+                    <p class="popup__text">==> I'll put my Proton / Tutanota mail id and keys to this page soon.</p>
+                    <div class="popup__buttons"> <a href="mailto:heyalbins@gmail.com" class="btna">EMail :
+                            heyalbins@gmail.com</a> </div>
+                </div>
+                 <div class="popup__buttons"> <a href="#" class="btna">My matrix id: heyalbin</a> </div>
+                </div>
+            </div>
+            <div class="popup__contactinfo">
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Lets talk popup page END-->
+
+    <script>
+        function toggleTheme() {
+            var html = document.querySelector('html');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.setAttribute('data-theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+            }
+        }
+
+    </script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
