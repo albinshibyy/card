@@ -1,4 +1,7 @@
-@import url("https://api.fonts.coollabs.io/css2?family=Acme&display=swap");
+@font-face {
+    font-family: "Acme-Regular";
+    src: url("Acme-Regular.ttf") format("truetype");
+}
 
 :root {
     --body-color: #ffffff;
@@ -9,7 +12,7 @@
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --body-color: #11151d;
+        --body-color:#11151d;
         --card-color: #1b202d;
         --title-color: #c3c9d2;
         --text-color: #c3c9d2;
@@ -17,7 +20,6 @@
     }
 }
 
-/* CUSTOM TEXT SELECTION COLORS */
 ::-moz-selection {
     /* Code for Firefox */
     color: red;
@@ -29,16 +31,6 @@
     background: yellow;
 }
 
-/* CUSTOM TEXT SELECTION COLOR END */
-
-/* CUSTON FONT ADDED */
-@font-face {
-    font-family: "Acme-Regular";
-    src: url("Acme-Regular.ttf") format("truetype");
-}
-
-/* CUSTION FONT END  */
-/* LOGO AND MENU EDIT SECTION MAIN NO OTHER I THINK NOW */
 .mail {
     position: absolute;
     width: 36px;
@@ -72,6 +64,7 @@
 
 .icons-container {
     padding: 0.3rem 0;
+    margin-bottom:-1.4rem;
 }
 
 .icon {
@@ -87,14 +80,9 @@
     transform: translateY(-3px);
 }
 
-.buttons-wrap {
-    display: flex;
-    margin-top: -1.1em;
-}
-
 /* NAVIGATION MENU SPECIAL EDIT FOR LI */
 .menuli {
-    font-family: "Acme", sans-serif;
+    font-family: "Acme-Regular", sans-serif;
     text-decoration: none;
     color: white;
     line-height: 4rem;
@@ -139,7 +127,7 @@
     font-weight: 100;
     text-decoration: none;
     transition: all 0.3s;
-    font-family: "Acme", sans-serif;
+    font-family: "Acme-Regular", sans-serif;
 }
 
 .popup__close:hover {
@@ -251,7 +239,7 @@ a {
 
 .popup__buttons {
     background-color: #5266d4;
-    font-family: "Acme", sans-serif;
+    font-family: "Acme-Regular", sans-serif;
     border-radius: 12px;
     color: #fff;
     padding: 11px 15px;
@@ -284,4 +272,8 @@ a {
     -webkit-box-shadow: inset 0 -33px 0 0 #444452;
     box-shadow: inset 0 -33px 0 0 #444452;
     color: #fff;
+}
+
+.buttons-wrap {
+    margin-bottom:1px;
 }
